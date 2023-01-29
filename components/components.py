@@ -29,9 +29,9 @@ class WebElement():
     def visible(self):
         return self.find_element().is_displayed()
 
-
     def not_visible(self, time_wait = 2):
-        if self.visible():
+        try:
+            WebDriverWait(self.driver, time_wait).until_not(EC.invisibility_of_element((By.CSS_SELECTOR, self.locator)))
             return False
-        else:
+        except TimeoutException:
             return True
