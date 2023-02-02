@@ -12,3 +12,6 @@ class ElementsPage(BasePage):
         self.content_p = WebElement(driver, '#section1Content > p')
         self.btn_section1 = WebElement(driver, '#section1Heading')
         self.btns_first_menu = WebElement(driver, "div:nth-child(1) > div > ul > li")
+        self.btns_a_fw_menu = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(3) > span')
+        self.ul_menu = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(3) > div > ul > li')
+        self.btn_alerts = WebElement(driver, '#item-1')
