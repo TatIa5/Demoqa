@@ -11,3 +11,4 @@ class ElementsPage(BasePage):
         self.btn_sidebar_first_textbox = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(1) > div > ul > #item-0 > span')
         self.content_p = WebElement(driver, '#section1Content > p')
         self.btn_section1 = WebElement(driver, '#section1Heading')
+        self.btns_first_menu = WebElement(driver, "div:nth-child(1) > div > ul > li")
